@@ -36,9 +36,11 @@ storage: {
     bucket: 'my-bucket', //bucket 名称
     operator: 'somebody', //操作员用户名
     password: 'secret', //操作员密码
-    domain: 'http://bucket.b0.upaiyun.com', //空间绑定的域名，"必须带 http://" ，结尾不能有 "/"
+    domain: 'http://bucket.b0.upaiyun.com', //空间绑定的域名，必须带 "http(s)://" ，结尾不能有 "/"
     filePath: 'YYYY/MM/' //文件远端保存地址，默认为日期格式，由 moment 解析后填充，
                            您可以修改为 "[您的目录地址]"，开头不能加 "/"，结尾必须加 "/"
+                           具体格式参见： [http://momentjs.com/](http://momentjs.com/)
+    imgVersion: '_large' // 自定义版本，需带上分隔符
   }
 }
 ```
